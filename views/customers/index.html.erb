@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customers</h1>
+<br>
+<div class="">
+<%= link_to 'New Customer', new_customer_path %>
+<br>
+<br>
+<table>
+  <thead>
+    <tr class="table-heading">
+      <th>Is a customer</th>
+      <th>Marketing ban</th>
+      <th>Company</th>
+      <th>Name</th>
+      <th>Job position</th>
+      <th>Phone</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Street</th>
+      <th>Street2</th>
+      <th>Zip</th>
+      <th>City</th>
+      <th>Category</th>
+      <th>Notes</th>
+      <th>Called</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.is_a_customer %></td>
+        <td><%= customer.marketing_ban %></td>
+        <td><%= customer.company %></td>
+        <td><%= customer.name %></td>
+        <td><%= customer.job_position %></td>
+        <td><%= customer.phone %></td>
+        <td><%= customer.mobile %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.street %></td>
+        <td><%= customer.street2 %></td>
+        <td><%= customer.zip %></td>
+        <td><%= customer.city %></td>
+        <td><%= customer.category %>
+         
+            
+
+        </td>
+        <td><%= customer.notes %></td>
+        <td><%= customer.called %></td>
+        <td><%= link_to 'Show', customer %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

@@ -1,0 +1,81 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Is a customer:</strong>
+  <%= @customer.is_a_customer %>
+</p>
+
+<p>
+  <strong>Marketing ban:</strong>
+  <%= @customer.marketing_ban %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @customer.company %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customer.name %>
+</p>
+
+<p>
+  <strong>Job position:</strong>
+  <%= @customer.job_position %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @customer.phone %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @customer.mobile %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @customer.street %>
+</p>
+
+<p>
+  <strong>Street2:</strong>
+  <%= @customer.street2 %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @customer.zip %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @customer.city %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @customer.category %>
+
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @customer.notes %>
+</p>
+
+<p>
+  <strong>Called:</strong>
+  <%= @customer.called %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Destroy', @customer, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', customers_path %>
